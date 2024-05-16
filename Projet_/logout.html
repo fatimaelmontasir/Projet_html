@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logout Page</title>
+  <link rel="stylesheet" href="stylee.css">
+  <link rel="shortcut icon" href="image/159478.png">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0,0,0,0.1),#333), url("image/sand.jpg") ; background-attachment: fixed;
+}
+
+.container {
+  max-width: 400px;
+  width: 600px;
+  height: 200px;
+  margin-top: 230px;
+  margin-right: 600px;
+  margin-left: 500px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: center;
+}
+.container h1, p, a {
+  padding-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href=""> <span> Tisuraf </span>n Dunnit</a>
+    </div>
+    <ul class="menu">
+        <li><a href="#">Acceuil</a></li>
+        <li><a href="#a-propos">à propos</a></li>
+        <li><a href="#popular-destination">destinations</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+    
+
+    <div class="responsive-menu"></div>
+</header>
+  <div class="container">
+    <h1>Vous êtes sur le point de vous déconnecter</h1>
+    <p>Êtes-vous sûr de vouloir vous déconnecter?</p>
+    <a href="login1.html"><button id="logoutBtn">Déconnexion</button></a>
+  </div>
+
+  <script>
+    document.getElementById('logoutBtn').addEventListener('click', function() {
+  // Placeholder for logout functionality
+  alert('Vous êtes maintenant déconnecté!');
+  // Rediriger l'utilisateur vers une autre page après la déconnexion
+  window.location.href = 'login1.html';
+});
+
+  </script>
+</body>
+</html>
